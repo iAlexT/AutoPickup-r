@@ -1,0 +1,4 @@
+name: AutoPickup
+version: ${project.version}
+main: me.ialext.dlux.autopickup.AutoPickup
+api-version: 1.16
