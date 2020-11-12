@@ -11,6 +11,7 @@ public class MainModule extends AbstractModule {
     public MainModule(AutoPickup plugin) {
         this.plugin = plugin;
     }
+
     @Override
     protected void configure() {
         bind(AutoPickup.class).toInstance(plugin);
@@ -18,5 +19,6 @@ public class MainModule extends AbstractModule {
 
         install(new CacheModule());
         install(new ServiceModule());
+        install(new MenusModule());
     }
 }
